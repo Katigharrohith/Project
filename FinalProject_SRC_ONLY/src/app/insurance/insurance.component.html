@@ -1,0 +1,60 @@
+<div class="start">
+    <h1 align="center">Insurance Application Form</h1>
+  <form #form1="ngForm" (ngSubmit)="saveins(form1)">
+          <div align="center" class="container1">
+              <div class="input1">
+              <label  for="InsureId"><b>Insurance ID </b></label>
+              <input class="t1" name="InsureId" placeholder=" insurance id"  type="text" required  [(ngModel)]=insurance.InsureId #InsureId="ngModel"><br/>
+              
+              <div *ngIf="form1.submitted && InsureId.invalid">
+                <div class="error" *ngIf="InsureId.errors.required">
+                  Insurance ID is required.
+                </div>
+              </div>
+  
+              <label  for="amount"><b>Sum Insured</b></label>
+              <input class="t2" name=" amount" placeholder="sum insured" type="number" required [(ngModel)]=insurance.amount #amount="ngModel"><br/>
+      
+              <div *ngIf="form1.submitted && amount.invalid">
+                <div class="error" *ngIf="amount.errors.required">
+                  Sum Insured is required.
+                </div>
+                </div>
+  
+  
+              <label  for="cropid"><b>Crop ID </b></label>
+              <input class="t3" name="cropid" placeholder="cropid" type="text" required [(ngModel)]=insurance.cropid #cropid="ngModel" ><br/>
+  
+              <div *ngIf="form1.submitted && cropid.invalid">
+                <div class="error" *ngIf="cropid.errors.required">
+                  Crop ID is required.
+                </div>
+                </div>
+  
+  
+              <label  for="insurancecomp"><b>Insurance Company </b></label>
+              <input class="t4" name="insurancecomp" placeholder=" insurance company" type="text"required [(ngModel)]=insurance.insurancecomp #insurancecomp="ngModel" ><br/>
+              
+  
+              <div *ngIf="form1.submitted && insurancecomp.invalid">
+                <div class="error" *ngIf="insurancecomp.errors.required">
+                  Insurance company is required.
+                </div>
+                </div>
+  
+             
+            
+  
+             
+          
+           <div class="button1">
+            <button type="submit" class="request">Submit</button>
+          </div>
+  
+      
+        </div>
+      </div>
+  
+      </form>
+    </div>
+

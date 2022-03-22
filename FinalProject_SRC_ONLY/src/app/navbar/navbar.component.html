@@ -1,0 +1,17 @@
+<div class="topnav">
+    <img  src="../../assets/homeImages/farmer7.jpeg" alt="farmer"  style="height:50px;width:100px;">
+    
+    <!-- <a [routerLink]="'/app-farmer-welcome2'">News</a>      <a [routerLink]="'app-about'">About</a> -->
+    <a [routerLink]="'/farmerregistration'"style="float: right;">Register</a>
+    <a [routerLink]="'app-contact-us'"style="float: right;">Contact</a>
+    <a [routerLink]="'/app-login'"style="float: right;">Login</a>
+    <a [routerLink]="'app-about'" style="float: right;">About</a>
+   
+    <a [routerLink]="'app-home'"style="float: right;">Home</a>
+    <div class ="right" *ngIf="name!=null">
+
+        Hi {{name}}
+    <a  [routerLink]="'/Notification'">Notification</a>
+    <a  href="#" (click)="Logout()">Logout</a>
+</div>
+</div>

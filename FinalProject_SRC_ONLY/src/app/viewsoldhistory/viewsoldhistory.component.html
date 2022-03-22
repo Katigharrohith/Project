@@ -1,0 +1,32 @@
+
+<div class="col">
+    <div  class="form-row">
+        <div class="container "> 
+        <div>
+            <h3 class="heading">Crops</h3> 
+        </div>
+        
+        <table class="table1">
+            <thead class="thead-dark">
+            <tr>
+                <th>Crop Id</th>
+                <th>Crop Name</th>
+                <th>Quantity</th>
+                <th>Base Price</th>
+                <th>Sold Price</th>
+            </tr>
+            </thead>
+            <thead class ="thead-dark">
+            <tr *ngFor="let n of notifications">  
+                <td></td>
+                <td>{{n.cropid}}</td>
+                <td>{{n.cropname}}</td>
+                <td>{{n.quantity}}</td>
+                <td>{{n.baseprice}}</td>
+                <td>{{n.amount}}</td>
+            </tr>
+        </thead>
+        </table>
+        </div>
+    </div>
+</div>

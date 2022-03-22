@@ -1,0 +1,84 @@
+<div class="start">
+    <h1 align="center">Claim Form</h1>
+  <form #form1="ngForm" (ngSubmit)="saveins(form1)">
+          <div align="center" class="container1">
+              <div class="input1">
+              <label  for="PolicyNo"><b>Policy Number </b></label>
+              <input class="t1" name="PolicyNo" placeholder=" policy number"  type="text" required  [(ngModel)]=appins.PolicyNo #PolicyNo="ngModel"><br/>
+              
+              <div *ngIf="form1.submitted && PolicyNo.invalid">
+                <div class="error" *ngIf="PolicyNo.errors.required">
+                  Policy Number is required.
+                </div>
+              </div>
+  
+              <label  for="validstart"><b>Start Date</b></label>
+              <input class="t2" name="validstart" placeholder=" start date" type="date" required [(ngModel)]=appins.validstart #validstart="ngModel"><br/>
+      
+              <div *ngIf="form1.submitted && validstart.invalid">
+                <div class="error" *ngIf="validstart.errors.required">
+                  Start Date is required.
+                </div>
+                </div>
+  
+  
+              <label  for="validend"><b>End Date </b></label>
+              <input class="t3" name="validend" placeholder="End Date" type="date" required [(ngModel)]=appins.validend #validend="ngModel" ><br/>
+  
+              <div *ngIf="form1.submitted && validend.invalid">
+                <div class="error" *ngIf="validend.errors.required">
+                  End Date is required.
+                </div>
+                </div>
+  
+  
+              <label  for="premium"><b>Premium Amount </b></label>
+              <input class="t4" name="premium" placeholder="premium amount" type="number"required [(ngModel)]=appins.premium #premium="ngModel" ><br/>
+              
+  
+              <div *ngIf="form1.submitted && premium.invalid">
+                <div class="error" *ngIf="premium.errors.required">
+                  Premium Amount is required.
+                </div>
+                </div>
+  
+             
+              <label  for="area"><b>Area</b></label>
+              <input class="t5" name="area" placeholder="area" type="number" required [(ngModel)]=appins.area #area="ngModel"><br/>
+  
+              <div *ngIf="form1.submitted && area.invalid">
+                <div class="error" *ngIf="area.errors.required">
+                  Area is required.
+                </div>
+                </div>
+  
+              <label  for="sum"> <b>Sum Insured </b></label>
+              <input class="t6" name="sum" placeholder="sum insured"  type="number" required [(ngModel)]=appins.sum #sum="ngModel"><br/>
+  
+              <div *ngIf="form1.submitted && sum.invalid">
+                <div class="error" *ngIf="sum.errors.required">
+                  Sum Insured is required.
+                </div>
+                </div>
+
+                <label  for="approve"> <b>Approve </b></label>
+                <input class="t6" name="approve" placeholder="approve"  type="text" required [(ngModel)]=appins.approve #approve="ngModel"><br/>
+    
+                <div *ngIf="form1.submitted && approve.invalid">
+                  <div class="error" *ngIf="approve.errors.required">
+                    Approval is required.
+                  </div>
+                  </div>
+  
+             
+          
+          <div class="button1">
+            <button type="submit" class="request">Submit</button>
+          </div>
+  
+      
+        </div>
+      </div>
+  
+      </form>
+    </div>
