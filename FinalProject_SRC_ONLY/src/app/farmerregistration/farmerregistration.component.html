@@ -1,9 +1,21 @@
 <div class="row">
     <div class="main">
+  
         <div class="card">
             <form #form1="ngForm" (ngSubmit)="form1.form.valid && process()">
                 <div class="container">
                     <h1>Personal Details</h1>
+                    <form>
+                      <div class="radio-inline">
+                      <label for="role">Choose a Role:</label>
+                      <input id ="farmer" type ="radio" class= rolebut (click)="assignRole('Farmer')"  name="xyz">
+                      <label class="radio-label" >Farmer</label>
+                      <input id ="bidder" type ="radio" class= rolebut (click)="assignRole('Bidder')"  name="xyz">
+                      <label class="radio-label">Bidder</label>
+          
+                      </div>
+                
+                    </form>
                     <label  for="uname"><b>Full Name  </b></label>
                     <input class="f1" type="text" placeholder="Enter First Name " name="uname" required minlength="3" [(ngModel)]=user.fullname #uname="ngModel"><br/>
                     
@@ -133,14 +145,7 @@
                                 Minimun length of Password is 8
                               </div>
                             </div>
-                      <form>
-                        <div class="roles">
-                        <label for="role">Choose a Role:</label>
-                        <button id ="farmer" class= rolebut (click)="assignRole('Bidder')" >Bidder</button>
-
-                        <button id="bidder" class= rolebut (click)="assignRole('Farmer')"  >Farmer</button>
-                        </div>
-                      </form>
+                     
 
                         <div *ngIf="user.role=='Farmer'">
                         <div  class="d1">Land Details</div>
@@ -172,10 +177,11 @@
                 </div>
                 </div>
                     <br>
-                <div>
-                    <button *ngIf="user.role=='Farmer' || user.role=='Bidder'" class="button1" type="submit" id="submit">Register</button>
-                    <button  *ngIf="user.role=='Farmer' || user.role=='Bidder'"  class="button2" (click)=reset() type ="submit"  >Reset</button><br>
-                </div>
+                    <div>
+                      <button *ngIf="user.role=='Farmer' || user.role=='Bidder'" class="button1" type="submit" id="submit">Register</button>
+                      <button  *ngIf="user.role=='Farmer' || user.role=='Bidder'"  class="button2" (click)=reset() type ="submit"  >Reset</button><br>
+                  </div>
+               
             </form>
         </div>
     </div>
