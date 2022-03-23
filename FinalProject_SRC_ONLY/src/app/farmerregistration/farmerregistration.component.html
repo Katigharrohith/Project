@@ -50,17 +50,20 @@
                       </div>
 
                     <div class="d1">Address Details</div>
-                    <input class="a1" type="text" placeholder="Line 1" name="addressLine1" required [(ngModel)]=address.addressLine1 #line1="ngModel"><br/>
+                    <label for="Address1"><b>Address1</b></label>
+          
+                    <input class="a2" type="text" placeholder="Line 1" name="addressLine1" required [(ngModel)]=address.addressLine1 #line1="ngModel"><br/>
 
                    <div *ngIf="form1.submitted && line2.invalid">
                       <div class="error" *ngIf="email.errors.required">
                         Address is required.
                       </div>
                     </div>
+                    <label for="Address1"><b>Address2</b></label>
+                    <input class="a2" type="text" placeholder="Line 2" name="addressLine2" required [(ngModel)]=address.addressLine2 #line2="ngModel"><br/>
 
-                    <input class="a1" type="text" placeholder="Line 2" name="addressLine2" required [(ngModel)]=address.addressLine2 #line2="ngModel"><br/>
-
-                    <label for="state"><b>State </b></label> <input class="a2" type="text" name="state" required [(ngModel)]=address.state #state="ngModel" ><br/>
+                    <label for="state"><b>State </b></label> 
+                    <input class="a2" id="a" type="text" name="state" required [(ngModel)]=address.state #state="ngModel" ><br/>
                    
                     <div *ngIf="form1.submitted && state.invalid">
                         <div class="error" *ngIf="state.errors.required">
@@ -68,7 +71,8 @@
                         </div>
                     </div>
 
-                    <label for="city"><b>City </b></label> <input class="a3"  type="text" name="city"[(ngModel)]=address.city #contact="ngModel" ><br/>
+                    <label for="city"><b>City </b></label>
+                    <input class="a3"  type="text" name="city"[(ngModel)]=address.city #contact="ngModel" ><br/>
                    
                     <div *ngIf="form1.submitted && state.invalid">
                         <div class="error" *ngIf="state.errors.required">

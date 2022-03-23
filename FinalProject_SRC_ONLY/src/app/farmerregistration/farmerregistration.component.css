@@ -1,13 +1,15 @@
 .row{
-    background-image: url('../../assets/homeImages/farmer8.jpeg');
+    background-image: url('../../assets/homeImages/farmer5.jpeg');
 	margin:20px;
     margin-top:5px;
     margin-bottom:50px;
 	margin-right:100px;
-	margin-left:170px;
 	height:auto;
-    width:1000px;
+    width:80%;
     padding-bottom: 30px;
+    padding-right: 250px;
+    text-align: center;
+
 }
   
   input{
@@ -29,64 +31,79 @@
   }
   .f1{
       margin-top: 5px;
-      margin-left: 97px;
+      margin-left: 95px;
+      border-radius: 5px;
   }
   .f2{
       margin-top: 5px;
-      margin-left: 53px;
+      margin-left: 51px;
+      border-radius: 5px;
   }
   .f3{
       margin-top: 5px;
-      margin-left: 110px;
+      margin-left: 108px;
+      border-radius: 5px;
   }
   .doc{
       margin-left: 110px;
   }
   .a1{
       margin-top: 5px;
-      margin-left: 70px;
+      margin-left: 105px;
+      border-radius: 5px;
   
   }
   .a2{
       margin-top: 5px;
-      margin-left: 130px;
+      margin-left: 105px;
+      border-radius: 5px;
+  }
+  #a{
+      margin-left: 125px;
   }
   .a3{
       margin-top: 5px;
       margin-left: 135px;
+      border-radius: 5px;
   
   }
   .a4{
       margin-top: 5px;
-      margin-left: 140px;
+      margin-left: 143px;
+      border-radius: 5px;
   }
   .l1{
       margin-top: 5px;
-      margin-left: 97px;
+      margin-left: 95px;
+      border-radius: 5px;
   
   }
   .l2{
       margin-top: 5px;
       margin-left: 105px;
+      border-radius: 5px;
   
   }
   .l3{
       margin-top: 5px;
       margin-left: 137px;
+      border-radius: 5px;
   
   }
   .b1{
       margin-top: 5px;
       margin-left: 45px;
+      border-radius: 5px;
   }
   .b2{
       margin-top: 5px;
       margin-left: 125px;
-  
+    border-radius: 5px;
   }
   .d1{
       margin-top: 5px;
-      margin-left: 105px;
+      margin-left: 110px;
+      border-radius: 5px;
   
   
   }
@@ -101,17 +118,20 @@
   }
   .d2{
       margin-top: 5px;
-      margin-left: 125px;
+      margin-left: 130px;
       margin-bottom: 10px;
+      border-radius: 5px;
   }
   .pass1{
       margin-top: 5px;
-      margin-left: 90px;
+      margin-left: 95px;
+      border-radius: 5px;
   
   }
   .pass2{
       margin-top: 5px;
-      margin-left: 27px;
+      margin-left: 32px;
+      border-radius: 5px;
   
   }
   .roles{

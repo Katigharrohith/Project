@@ -4,10 +4,10 @@ body{
 }
 .container2{
     font-family: "Montserrat", sans-serif;
-    font-size: 3vmin;
+    font-size: 2vmin;
     text-align: center;
     color: black;
-    border-radius: 2%;
+    border-radius: 1%;
     padding: 2rem;
     margin: 2rem;
     margin-top:5px;
@@ -23,8 +23,8 @@ body{
  background-color:#99ff25;
  float:right;
  color:black;
- font-size: 20px;
- padding: 16px 20px;
+ font-size: 5px;
+ padding: 10px 5px;
  border:1px solid black;
  cursor: pointer;
  opacity: 0.9;
