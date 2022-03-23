@@ -144,7 +144,7 @@
 
                         <div *ngIf="user.role=='Farmer'">
                         <div  class="d1">Land Details</div>
-                    <label for="area"><b>Area </b></label> <input class="l1" type="number" name="area" required [(ngModel)]=land.area #area="ngModel"><br/>
+                    <label for="area"><b>Ward No. </b></label> <input class="l1" type="number" name="area" required [(ngModel)]=land.area #area="ngModel"><br/>
                    
                     <div *ngIf="form1.submitted && area.invalid">
                         <div class="error" *ngIf="area.errors.required">
