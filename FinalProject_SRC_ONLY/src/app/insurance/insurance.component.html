@@ -14,10 +14,10 @@
             </div>
              
             <label  for="sum"><b>Sum Insured</b></label>
-            <input class="t2" name="sum" placeholder="sum insured"  type="number" required [(ngModel)]=appins.sum #sum="ngModel"><br/>
+            <input class="t2" name="number" placeholder="sum insured" type="number" required [(ngModel)]=insurance.amount #amount="ngModel"><br/>
             <br/>
-            <div *ngIf="form1.submitted && sum.invalid">
-              <div class="error" *ngIf="sum.errors.required">
+            <div *ngIf="form1.submitted && amount.invalid">
+              <div class="error" *ngIf="amount.errors.required">
                 Sum Insured is required.
               </div>
             <br/>

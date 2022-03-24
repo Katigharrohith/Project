@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List getUserDetails() {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 		return userRepo.getAllUsers();
 	}
 
