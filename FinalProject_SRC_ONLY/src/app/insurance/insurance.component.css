@@ -1,0 +1,42 @@
+.start{
+    background-image: url('../../assets/homeImages/farmer5.jpeg');
+    height: 500px;
+}
+.a1{
+    margin:10px;
+}
+.t1{
+    margin-left: 60px;
+    border:2px solid green;
+    border-radius: 4px;
+}
+.t2{
+    margin-left: 62px;
+    border:2px solid green;
+    border-radius: 4px;
+}
+.t3{
+    margin-left: 90px;
+    border:2px solid green;
+    border-radius: 4px;
+}
+.t4{
+    margin-left: 10px;
+    border:2px solid green;
+    border-radius: 4px;
+}
+.request{
+    background-color: green;
+    padding-right: 10px;
+    padding-left: 10px;
+   padding-bottom: 3px;
+   padding-top: 3px;
+   border-radius: 3px;
+    color: white;
+}
+.request:hover{
+    background-color: blue;
+}
+.error{
+    color: red;
+}

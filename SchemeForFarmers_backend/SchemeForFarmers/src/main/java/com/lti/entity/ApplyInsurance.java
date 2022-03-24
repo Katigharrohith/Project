@@ -17,6 +17,7 @@ import javax.persistence.Table;
 @Table(name="ApplyInsurance")
 public class ApplyInsurance {
 	@Id
+
 	long policyNo;
 	public long getPolicyNo() {
 		return policyNo;
