@@ -1,5 +1,7 @@
 package com.lti.repository;
 
+import java.util.List;
+
 import com.lti.entity.Address;
 import com.lti.entity.LandDetails;
 import com.lti.entity.User;
@@ -23,5 +25,7 @@ public interface UserRepository {
 	String getUserRole(int id);
 
 	String getUserName(int id);
+	
+	List getAllUsers();
 
 }

@@ -1,5 +1,7 @@
 package com.lti.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -65,6 +67,12 @@ public class UserServiceImpl implements UserService {
 		} catch (EmptyResultDataAccessException e) {
 			throw new UserServiceException("Incorrect Email/Password");
 		}
+	}
+
+	@Override
+	public List getUserDetails() {
+		// TODO Auto-generated method stub
+		return userRepo.getAllUsers();
 	}
 
 }

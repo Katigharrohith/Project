@@ -41,7 +41,8 @@
                       </div>
 
                     <label for="email"><b>Email id  </b></label>
-                    <input class="f3"  type="email" placeholder="Enter Email @abc.com" name="email" required [(ngModel)]=user.email #email="ngModel"><br/>
+    
+                    <input class="f3" id="email"  type="email" placeholder="Enter Email @abc.com" name="email" required [(ngModel)]=user.email #email="ngModel"><br/>
 
                     <div *ngIf="form1.submitted && email.invalid">
                         <div class="error" *ngIf="email.errors.required">

@@ -1,7 +1,10 @@
 package com.lti.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -65,5 +68,9 @@ public class UserController {
 			loginstatus.setMessage(e.getMessage());
 			return loginstatus;
 		}
+	}
+	@GetMapping(path = "/getDetails")
+	public List getDetails() {
+		return userService.getUserDetails();
 	}
 }

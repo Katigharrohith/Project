@@ -1,5 +1,7 @@
 package com.lti.repository;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -74,5 +76,12 @@ public class UserRepositoryImpl implements UserRepository {
 	public void saveAddress(Address address) {
 		entityManager.persist(address);
 	}
+	@Override
+	public List getAllUsers() {
 
+		return entityManager.createQuery("select u from User u ").getResultList();
+				
+	}
+
+	
 }
